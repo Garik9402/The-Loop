@@ -8,7 +8,10 @@
     // @include mq(sm) {}
     %Montserrat-300 {}
     
-    %Montserrat-400 {}
+    %Montserrat-400 {
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
     
     %Montserrat-500 {
         font-family: 'Montserrat';
@@ -19,7 +22,19 @@
     
     %Montserrat-600 {}
     
-    %Montserrat-700 {}
+    %Montserrat-700 {
+        font-family: 'Montserrat';
+        font-weight: 700;
+    }
+    
+    %button-long {
+        width: 240px;
+        height: 55px;
+        left: 405px;
+        top: 419px;
+        /* Accent */
+        background: #D7B399;
+    }
     
     $color-black:#000000;
     .wrapper-content {}
@@ -27,15 +42,15 @@
     .header-w {
         width: 100%;
         padding: 50px 0px 70px;
+        background: #F9F6F1;
     }
     
     .header {
-        max-width: 1110px;
         width: 100%;
-        margin: 0 auto;
         &__top {
-            max-width: inherit;
-            width: inherit;
+            max-width: 1110px;
+            width: 100%;
+            margin: 0 auto;
             display: flex;
         }
         &__top-main {
@@ -153,5 +168,37 @@
         }
         &__top-cols {
             margin: 0px 0px 5px 15px;
+        }
+        .header-sale-w {
+            width: 100%;
+        }
+        .header-sale {
+            max-width: 1126px;
+            width: 100%;
+            margin: 0 auto;
+            &__left {
+                max-width: 570px;
+                width: 100%;
+            }
+            &__headline {
+                @extend %Montserrat-400;
+                font-size: 30px;
+                line-height: 37px;
+                letter-spacing: 0.02em;
+                color: $color-black;
+            }
+            &__title {
+                @extend %Montserrat-700;
+                color: $color-black;
+                font-size: 55px;
+                line-height: 67px;
+                letter-spacing: 0.04em;
+            }
+            &__button {}
+            &__buttontext {}
+            &__right {}
+            &__price-w {}
+            &__priceold {}
+            &__pricnew {}
         }
     }

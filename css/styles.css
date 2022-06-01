@@ -6,6 +6,11 @@
           box-sizing: border-box;
 }
 
+.header .header-sale__headline {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
 .header__top-main .nav__items-link, .header__top-main .nav__drropdown-itemslink, .header__top-itemslink {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -13,20 +18,25 @@
   line-height: 17px;
 }
 
+.header .header-sale__title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
 .header-w {
   width: 100%;
   padding: 50px 0px 70px;
+  background: #F9F6F1;
 }
 
 .header {
-  max-width: 1110px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .header__top {
-  max-width: inherit;
-  width: inherit;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,5 +192,34 @@
 
 .header__top-cols {
   margin: 0px 0px 5px 15px;
+}
+
+.header .header-sale-w {
+  width: 100%;
+}
+
+.header .header-sale {
+  max-width: 1126px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header .header-sale__left {
+  max-width: 570px;
+  width: 100%;
+}
+
+.header .header-sale__headline {
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.header .header-sale__title {
+  color: #000000;
+  font-size: 55px;
+  line-height: 67px;
+  letter-spacing: 0.04em;
 }
 /*# sourceMappingURL=styles.css.map */
