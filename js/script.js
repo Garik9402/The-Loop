@@ -19,3 +19,19 @@
          centerMode: true,
      })
  });
+ //  секция бесплатная доставка
+ let deliveryWrapNode = document.getElementById('delivery-w')
+ let deliveryNode = document.createElement('div')
+ let deliveryInnerNode = document.createElement('div')
+ let deliveryTitleNode = document.createElement('h3')
+ let deliverySubitleNode = document.createElement('h5')
+ deliveryWrapNode.append(deliveryNode)
+ deliveryNode.classList.add('delivery')
+ deliveryNode.append(deliveryInnerNode)
+ deliveryInnerNode.classList.add('delivery__inner')
+ deliveryInnerNode.append(deliveryTitleNode)
+ deliveryTitleNode.classList.add('delivery__title')
+ deliveryTitleNode.innerHTML = 'БЕСПЛАТНАЯ ДОСТАВКА ОТ 3000₽'
+ deliverySubitleNode.classList.add('delivery__subtitle')
+ deliveryInnerNode.append(deliverySubitleNode)
+ deliverySubitleNode.innerHTML = 'Сделайте заказ и получите подарок!'
