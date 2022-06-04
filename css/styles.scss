@@ -305,3 +305,33 @@ $color-black:#000000;
         color: #FFFFFF;
     }
 }
+
+#collections-w {
+    width: 100%;
+}
+
+.collections {
+    width: 100%;
+    &__inner {
+        width: 100%;
+    }
+    &__mens-womens-w {
+        max-width: 100%;
+        display: flex;
+    }
+    &__mens {
+        width: 100%;
+        background-color: #F9F6F1;
+    }
+    &__mens-inner {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    &__mens-item {}
+    &__womens {
+        width: 100%;
+    }
+    &__women-inner {}
+}
+
+collections-whole {}

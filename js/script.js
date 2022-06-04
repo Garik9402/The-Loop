@@ -55,9 +55,24 @@
  collectionsMensItems.append(collectionsMensTitle)
  collectionsMensSubtitle.textContent = 'Обувь, полуверы, костюмы'
  collectionsMensItems.append(collectionsMensSubtitle)
- let img = document.createElement('img')
- img.src = "images/men.png"
- collectionsMensInner.append(img)
+ let collectionsPrev = document.createElement('button')
+ collectionsPrev.classList.add('collections__mens-button')
+ collectionsMensItems.append(collectionsPrev)
+
+ function menImg() {
+     let img = document.createElement('img')
+     img.src = "images/men.png"
+     collectionsMensInner.append(img)
+ }
+ menImg()
+
+ function womenImg() {
+     let img = document.createElement('img')
+     img.src = 'images/women.png'
+     collectionsWomenInner.append(img)
+ }
+ womenImg()
+
  collections.classList.add('collections')
  collectionsWrapper.appendChild(collections)
  collectionsInner.classList.add('collections__inner')
@@ -65,14 +80,14 @@
  collectionsMensWomensWrapper.classList.add('collections__mens-womens-w')
  collectionsInner.append(collectionsMensWomensWrapper)
  collectionsMens.classList.add('collections__mens')
+ collectionsMensWomensWrapper.append(collectionsMens)
  collectionsMensInner.classList.add('collections__mens-inner')
  collectionsMens.append(collectionsMensInner)
  collectionsMensItems.classList.add('collections__mens-item')
  collectionsMensInner.append(collectionsMensItems)
- collectionsInner.append(collectionsMens)
+ collectionsMensWomensWrapper.append(collectionsWomen)
  collectionsWomen.classList.add('collections__womens')
  collectionsWomenInner.classList.add('collections__women-inner')
  collectionsWomen.append(collectionsWomenInner)
- collectionsInner.append(collectionsWomen)
  collectionsWhole.classList.add('collections-whole')
  collectionsInner.append(collectionsWhole)

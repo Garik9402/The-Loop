@@ -358,4 +358,42 @@
   text-align: center;
   color: #FFFFFF;
 }
+
+#collections-w {
+  width: 100%;
+}
+
+.collections {
+  width: 100%;
+}
+
+.collections__inner {
+  width: 100%;
+}
+
+.collections__mens-womens-w {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collections__mens {
+  width: 100%;
+  background-color: #F9F6F1;
+}
+
+.collections__mens-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.collections__womens {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
