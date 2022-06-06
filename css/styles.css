@@ -395,5 +395,19 @@
 
 .collections__womens {
   width: 100%;
+  background-color: #F4F4F4;
+}
+
+.collections__women-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 /*# sourceMappingURL=styles.css.map */

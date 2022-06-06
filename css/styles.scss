@@ -330,8 +330,14 @@ $color-black:#000000;
     &__mens-item {}
     &__womens {
         width: 100%;
+        background-color: #F4F4F4;
     }
-    &__women-inner {}
+    &__women-inner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+    &__women-items {}
 }
 
-collections-whole {}
+.collections-whole {}

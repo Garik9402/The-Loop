@@ -50,14 +50,22 @@
  let collectionsMensItems = document.createElement('div')
  let collectionsMensTitle = document.createElement('h4')
  let collectionsMensSubtitle = document.createElement('p')
+ let collectionsWomenTitle = document.createElement('h4')
+ let collectionsWomenSubtitle = document.createElement('p')
+ collectionsWomenTitle.textContent = "ЖЕНСКАЯ КОЛЛЕКЦИЯ"
+ collectionsWomenSubtitle.textContent = "Обувь, полуверы, костюмы"
+ let collectionsWomenItems = document.createElement('div')
  collectionsMensTitle.classList.add('collections__mens-title')
  collectionsMensTitle.textContent = 'МУЖСКАЯ КОЛЛЕКЦИЯ'
  collectionsMensItems.append(collectionsMensTitle)
  collectionsMensSubtitle.textContent = 'Обувь, полуверы, костюмы'
  collectionsMensItems.append(collectionsMensSubtitle)
+ collectionsWomenTitle.classList.add('Collections__women-title')
  let collectionsPrev = document.createElement('button')
  collectionsPrev.classList.add('collections__mens-button')
  collectionsMensItems.append(collectionsPrev)
+ collectionsWomenItems.classList.add('collections__women-items')
+ collectionsWomenSubtitle.classList.add('collections__women-subtitle')
 
  function menImg() {
      let img = document.createElement('img')
@@ -72,7 +80,9 @@
      collectionsWomenInner.append(img)
  }
  womenImg()
-
+ collectionsWomenInner.append(collectionsWomenItems)
+ collectionsWomenItems.append(collectionsWomenTitle)
+ collectionsWomenItems.append(collectionsWomenSubtitle)
  collections.classList.add('collections')
  collectionsWrapper.appendChild(collections)
  collectionsInner.classList.add('collections__inner')
