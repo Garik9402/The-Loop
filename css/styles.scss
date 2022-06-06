@@ -324,20 +324,50 @@ $color-black:#000000;
         background-color: #F9F6F1;
     }
     &__mens-inner {
+        margin-top: 60px;
         display: flex;
         flex-direction: row-reverse;
     }
     &__mens-item {}
+    &__mens-title {
+        @extend %Montserrat-500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        color: $color-black;
+        margin-bottom: 25px;
+    }
+    &__mens-subtitle {
+        @extend %Montserrat-300;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
     &__womens {
         width: 100%;
         background-color: #F4F4F4;
     }
     &__women-inner {
+        margin-top: 60px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: start;
     }
     &__women-items {}
+    &__women-title {
+        @extend %Montserrat-500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        color: $color-black;
+        margin-bottom: 25px;
+    }
+    &__women-subtitle {
+        margin-bottom: 40px;
+        @extend %Montserrat-300;
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .collections-whole {}

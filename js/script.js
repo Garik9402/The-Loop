@@ -58,12 +58,15 @@
  collectionsMensTitle.classList.add('collections__mens-title')
  collectionsMensTitle.textContent = 'МУЖСКАЯ КОЛЛЕКЦИЯ'
  collectionsMensItems.append(collectionsMensTitle)
+ collectionsMensSubtitle.classList.add('collections__mens-subtitle')
  collectionsMensSubtitle.textContent = 'Обувь, полуверы, костюмы'
  collectionsMensItems.append(collectionsMensSubtitle)
- collectionsWomenTitle.classList.add('Collections__women-title')
- let collectionsPrev = document.createElement('button')
- collectionsPrev.classList.add('collections__mens-button')
- collectionsMensItems.append(collectionsPrev)
+ collectionsWomenTitle.classList.add('collections__women-title')
+ let collectionsMensPrev = document.createElement('button')
+ collectionsMensPrev.classList.add('collections__mens-button')
+ collectionsMensItems.append(collectionsMensPrev)
+ let collectionsWomenPrev = document.createElement('button')
+
  collectionsWomenItems.classList.add('collections__women-items')
  collectionsWomenSubtitle.classList.add('collections__women-subtitle')
 
@@ -91,6 +94,8 @@
  collectionsInner.append(collectionsMensWomensWrapper)
  collectionsMens.classList.add('collections__mens')
  collectionsMensWomensWrapper.append(collectionsMens)
+ collectionsWomenPrev.classList.add('collections__women-button')
+ collectionsWomenItems.appendChild(collectionsWomenPrev)
  collectionsMensInner.classList.add('collections__mens-inner')
  collectionsMens.append(collectionsMensInner)
  collectionsMensItems.classList.add('collections__mens-item')

@@ -7,7 +7,7 @@
           box-sizing: border-box;
 }
 
-.delivery__subtitle {
+.delivery__subtitle, .collections__mens-subtitle, .collections__women-subtitle {
   font-family: 'Montserrat';
   font-weight: 300;
 }
@@ -17,7 +17,7 @@
   font-weight: 400;
 }
 
-.header__top-main .nav__items-link, .header__top-main .nav__drropdown-itemslink, .header__top-itemslink {
+.header__top-main .nav__items-link, .header__top-main .nav__drropdown-itemslink, .header__top-itemslink, .collections__mens-title, .collections__women-title {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 14px;
@@ -384,6 +384,7 @@
 }
 
 .collections__mens-inner {
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,12 +394,27 @@
           flex-direction: row-reverse;
 }
 
+.collections__mens-title {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.collections__mens-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
 .collections__womens {
   width: 100%;
   background-color: #F4F4F4;
 }
 
 .collections__women-inner {
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,5 +425,19 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+}
+
+.collections__women-title {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.collections__women-subtitle {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
