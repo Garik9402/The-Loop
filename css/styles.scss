@@ -408,6 +408,9 @@ $color-black:#000000;
         width: 277px;
         height: 236px;
         background: url(../images/collections-img.png), #F9F6F1;
+        padding-bottom: 24px;
+        display: flex;
+        align-items: flex-end
     }
     &__whole-bottom {
         max-width: inherit;
@@ -418,5 +421,16 @@ $color-black:#000000;
         width: 277px;
         height: 236px;
         background: url(../images/collections-img.png), #F9F6F1;
+        padding-bottom: 24px;
+        display: flex;
+        align-items: flex-end
+    }
+    &__whole-name {
+        @extend %Montserrat-300;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        color: $color-black;
+        margin-left: 30px;
     }
 }

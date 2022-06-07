@@ -112,6 +112,10 @@
 
  function collectionsItemTop() {
      let itemsCollection = document.createElement('div')
+     let collectionsWhoreParagrafh = document.createElement('p')
+     collectionsWhoreParagrafh.classList.add('collections__whole-name')
+     collectionsWhoreParagrafh.innerHTML = 'ПЛАТЬЯ'
+     itemsCollection.append(collectionsWhoreParagrafh)
      itemsCollection.classList.add('collections__whole-itemstop')
      collectionsWholeTop.append(itemsCollection)
  }
@@ -126,6 +130,10 @@
 
  function collectionsItemBottom() {
      let itemsBottomCollection = document.createElement('div')
+     let collectionsWhoreParagrafh = document.createElement('p')
+     collectionsWhoreParagrafh.classList.add('collections__whole-name')
+     collectionsWhoreParagrafh.innerHTML = 'ПЛАТЬЯ'
+     itemsBottomCollection.append(collectionsWhoreParagrafh)
      itemsBottomCollection.classList.add('collections__whole-itemsbottom')
      collectionsWholeBottom.append(itemsBottomCollection)
  }
