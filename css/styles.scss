@@ -343,7 +343,19 @@ $color-black:#000000;
         line-height: 20px;
         margin-bottom: 40px;
     }
-    &__mens-button {}
+    &__mens-button {
+        width: 80px;
+        height: 30px;
+        background-image: url(../images/arrow-btn.png);
+        background-repeat: no-repeat;
+        background-color: #D7B399;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+    }
     &__womens {
         width: 100%;
         background-color: #F4F4F4;
@@ -369,13 +381,18 @@ $color-black:#000000;
         font-size: 16px;
         line-height: 20px;
     }
-    &__womens-button {
+    &__women-button {
         width: 80px;
         height: 30px;
         background: #D7B399;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: none;
+        background-image: url(../images/arrow-btn.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        cursor: pointer;
     }
 }
 
