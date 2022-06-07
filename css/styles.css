@@ -434,7 +434,7 @@
 }
 
 .collections__women-inner {
-  margin-top: 60px;
+  margin: 60px 0px 0px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,5 +479,39 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+}
+
+.collections__whole {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.collections__whole-top {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collections__whole-itemstop {
+  width: 277px;
+  height: 236px;
+  background: url(../images/collections-img.png), #F9F6F1;
+}
+
+.collections__whole-bottom {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collections__whole-itemsbottom {
+  width: 277px;
+  height: 236px;
+  background: url(../images/collections-img.png), #F9F6F1;
 }
 /*# sourceMappingURL=styles.css.map */

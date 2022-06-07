@@ -361,7 +361,7 @@ $color-black:#000000;
         background-color: #F4F4F4;
     }
     &__women-inner {
-        margin-top: 60px;
+        margin: 60px 0px 0px 35px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: start;
@@ -394,6 +394,29 @@ $color-black:#000000;
         background-position: 50% 50%;
         cursor: pointer;
     }
+    &__whole {
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__whole-top {
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+    }
+    &__whole-itemstop {
+        width: 277px;
+        height: 236px;
+        background: url(../images/collections-img.png), #F9F6F1;
+    }
+    &__whole-bottom {
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+    }
+    &__whole-itemsbottom {
+        width: 277px;
+        height: 236px;
+        background: url(../images/collections-img.png), #F9F6F1;
+    }
 }
-
-.collections-whole {}

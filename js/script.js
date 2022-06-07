@@ -104,5 +104,32 @@
  collectionsWomen.classList.add('collections__womens')
  collectionsWomenInner.classList.add('collections__women-inner')
  collectionsWomen.append(collectionsWomenInner)
- collectionsWhole.classList.add('collections-whole')
+ collectionsWhole.classList.add('collections__whole')
  collectionsInner.append(collectionsWhole)
+ let collectionsWholeTop = document.createElement('div')
+ collectionsWholeTop.classList.add('collections__whole-top')
+ collectionsWhole.append(collectionsWholeTop)
+
+ function collectionsItemTop() {
+     let itemsCollection = document.createElement('div')
+     itemsCollection.classList.add('collections__whole-itemstop')
+     collectionsWholeTop.append(itemsCollection)
+ }
+ collectionsItemTop()
+ collectionsItemTop()
+ collectionsItemTop()
+ collectionsItemTop()
+
+ let collectionsWholeBottom = document.createElement('div')
+ collectionsWholeBottom.classList.add('collections__whole-bottom')
+ collectionsWhole.append(collectionsWholeBottom)
+
+ function collectionsItemBottom() {
+     let itemsBottomCollection = document.createElement('div')
+     itemsBottomCollection.classList.add('collections__whole-itemsbottom')
+     collectionsWholeBottom.append(itemsBottomCollection)
+ }
+ collectionsItemBottom()
+ collectionsItemBottom()
+ collectionsItemBottom()
+ collectionsItemBottom()
