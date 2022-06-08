@@ -141,3 +141,33 @@
  collectionsItemBottom()
  collectionsItemBottom()
  collectionsItemBottom()
+
+ // Cекция новые модели
+ let modelesWrap = document.getElementById('modeles-w')
+ let modeles = document.createElement('div')
+ modeles.classList.add('modeles')
+ modelesWrap.append(modeles)
+ let modelesInner = document.createElement('div')
+ modelesInner.classList.add('modeles__inner')
+ modeles.append(modelesInner)
+ let modelesTitle = document.createElement('h2')
+ modelesTitle.classList.add('modeles__title')
+ modelesInner.append(modelesTitle)
+ let modelesRow = document.createElement('div')
+ modelesRow.classList.add('modeles__row')
+ modelesInner.append(modelesRow)
+
+ function funcModeles() {
+     let modelesItem = document.createElement('div')
+     modelesItem.classList.add('modeles__item')
+     modelesRow.append(modelesItem)
+     let img = document.createElement('img')
+     img.src = 'images/modeles-img.png'
+     modelesItem.append(img)
+
+
+ }
+ funcModeles()
+ funcModeles()
+ funcModeles()
+ funcModeles()
