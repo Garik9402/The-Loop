@@ -151,7 +151,7 @@
  modelesInner.classList.add('modeles__inner')
  modeles.append(modelesInner)
  let modelesTitle = document.createElement('h2')
- modelesTitle.classList.add('modeles__title')
+ modelesTitle.classList.add('title')
  modelesTitle.innerHTML = "Новые модели"
  modelesInner.append(modelesTitle)
  let modelesRow = document.createElement('div')

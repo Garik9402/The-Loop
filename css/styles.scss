@@ -434,3 +434,67 @@ $color-black:#000000;
         margin-left: 30px;
     }
 }
+
+#modeles-w {
+    width: 100%;
+}
+
+.modeles {
+    width: inherit;
+    &__inner {
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__row {
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        max-width: 255px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // background-color: #D7B399;
+        &::before,
+        &::after,
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 3px solid #D7B399;
+        }
+        &::before {
+            left: -2px;
+            top: -3px;
+            border-right: none;
+            border-bottom: none
+        }
+        &::after {
+            right: -2px;
+            top: -3px;
+            border-left: none;
+            border-bottom: none;
+        }
+    }
+    &__item-name {}
+    &__item-price {}
+    &__inner-button {}
+}
+
+.title {
+    @extend %Montserrat-700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-black;
+    text-align: center;
+}
