@@ -152,6 +152,7 @@
  modeles.append(modelesInner)
  let modelesTitle = document.createElement('h2')
  modelesTitle.classList.add('modeles__title')
+ modelesTitle.innerHTML = "Новые модели"
  modelesInner.append(modelesTitle)
  let modelesRow = document.createElement('div')
  modelesRow.classList.add('modeles__row')
@@ -164,10 +165,19 @@
      let img = document.createElement('img')
      img.src = 'images/modeles-img.png'
      modelesItem.append(img)
-
-
+     let modelesItemName = document.createElement('p')
+     modelesItemName.classList.add('modeles__item-name')
+     modelesItemName.innerHTML = 'Коктейльное платье'
+     modelesItem.append(modelesItemName)
+     let modelesItemPrice = document.createElement('p')
+     modelesItemPrice.classList.add('modeles__item-price')
+     modelesItemPrice.innerHTML = "₽ 40 000"
+     modelesItem.append(modelesItemPrice)
  }
  funcModeles()
  funcModeles()
  funcModeles()
  funcModeles()
+ let modelesInnerButton = document.createElement('button')
+ modelesInnerButton.classList.add('modeles__inner-button')
+ modelesInner.append(modelesInnerButton)
