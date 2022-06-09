@@ -178,6 +178,12 @@
  funcModeles()
  funcModeles()
  funcModeles()
+ let modelesInnerButtonWrap = document.createElement('div')
+ modelesInnerButtonWrap.classList.add('modeles__inner-buttonwrap')
+ modelesInner.append(modelesInnerButtonWrap)
+
  let modelesInnerButton = document.createElement('button')
  modelesInnerButton.classList.add('modeles__inner-button')
- modelesInner.append(modelesInnerButton)
+ modelesInnerButton.classList.add('button')
+ modelesInnerButton.innerHTML = 'ВСЕ МОДЕЛИ'
+ modelesInnerButtonWrap.append(modelesInnerButton)

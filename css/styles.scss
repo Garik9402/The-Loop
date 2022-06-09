@@ -44,6 +44,15 @@
     text-align: center;
 }
 
+.button {
+    display: inline-block;
+    width: 220px;
+    height: 55px;
+    background: $background-buttons;
+    border: none;
+    padding: 18px 35px;
+}
+
 $background-buttons: #D7B399;
 $color-black:#000000;
 .wrapper-content {}
@@ -477,13 +486,13 @@ $color-black:#000000;
         }
         &::before {
             left: -2px;
-            top: -3px;
+            top: -2px;
             border-right: none;
             border-bottom: none
         }
         &::after {
             right: -2px;
-            top: -3px;
+            top: -2px;
             border-left: none;
             border-bottom: none;
         }
@@ -511,17 +520,23 @@ $color-black:#000000;
             border: 3px solid #D7B399;
         }
         &::before {
-            left: -79px;
-            top: 15px;
+            left: -86px;
+            top: 23px;
             border-top: none;
             border-right: none;
         }
         &::after {
-            right: -79px;
-            top: 15px;
+            right: -86px;
+            top: 23px;
             border-left: none;
             border-top: none;
         }
+    }
+    &__inner-buttonwrap {
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+        justify-content: center;
     }
     &__inner-button {}
 }

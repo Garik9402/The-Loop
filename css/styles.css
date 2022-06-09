@@ -45,6 +45,12 @@
   text-align: center;
 }
 
+.button {
+  width: 220px;
+  height: 55px;
+  background: #D7B399;
+}
+
 .header-w {
   width: 100%;
   padding: 50px 0px 70px;
@@ -598,14 +604,14 @@
 
 .modeles__item::before {
   left: -2px;
-  top: -3px;
+  top: -2px;
   border-right: none;
   border-bottom: none;
 }
 
 .modeles__item::after {
   right: -2px;
-  top: -3px;
+  top: -2px;
   border-left: none;
   border-bottom: none;
 }
@@ -634,15 +640,15 @@
 }
 
 .modeles__item-price::before {
-  left: -79px;
-  top: 15px;
+  left: -86px;
+  top: 23px;
   border-top: none;
   border-right: none;
 }
 
 .modeles__item-price::after {
-  right: -79px;
-  top: 15px;
+  right: -86px;
+  top: 23px;
   border-left: none;
   border-top: none;
 }
