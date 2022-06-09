@@ -167,7 +167,7 @@
      modelesItem.append(img)
      let modelesItemName = document.createElement('p')
      modelesItemName.classList.add('modeles__item-name')
-     modelesItemName.innerHTML = 'Коктейльное платье'
+     modelesItemName.innerHTML = 'Коктейльное <br /> платье'
      modelesItem.append(modelesItemName)
      let modelesItemPrice = document.createElement('p')
      modelesItemPrice.classList.add('modeles__item-price')

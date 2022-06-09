@@ -23,7 +23,13 @@
     line-height: 17px;
 }
 
-%Montserrat-600 {}
+%Montserrat-600 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
 
 %Montserrat-700 {
     font-family: 'Montserrat';
@@ -459,9 +465,7 @@ $color-black:#000000;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // background-color: #D7B399;
-        &::before,
-        &::after,
+        padding: 25px 0px 28px;
         &::before,
         &::after {
             content: '';
@@ -484,8 +488,41 @@ $color-black:#000000;
             border-bottom: none;
         }
     }
-    &__item-name {}
-    &__item-price {}
+    &__item-name {
+        @extend %Montserrat-600;
+        color: $color-black;
+        margin: 25px 0px 15px;
+    }
+    &__item-price {
+        position: relative;
+        @extend %Montserrat-700;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #D7B399;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 3px solid #D7B399;
+        }
+        &::before {
+            left: -79px;
+            top: 15px;
+            border-top: none;
+            border-right: none;
+        }
+        &::after {
+            right: -79px;
+            top: 15px;
+            border-left: none;
+            border-top: none;
+        }
+    }
     &__inner-button {}
 }
 
@@ -497,4 +534,5 @@ $color-black:#000000;
     text-transform: uppercase;
     color: $color-black;
     text-align: center;
+    margin-bottom: 103px;
 }
