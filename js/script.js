@@ -180,10 +180,16 @@
  funcModeles()
  let modelesInnerButtonWrap = document.createElement('div')
  modelesInnerButtonWrap.classList.add('modeles__inner-buttonwrap')
- modelesInner.append(modelesInnerButtonWrap)
-
+ modelesInnerButtonWrap.style.width = '100%'
+ modelesInnerButtonWrap.style.display = 'flex'
+ modelesInnerButtonWrap.style.justifyContent = 'center'
+ modelesInnerButtonWrap.style.marginTop = '100px'
+ modeles.append(modelesInnerButtonWrap)
  let modelesInnerButton = document.createElement('button')
- modelesInnerButton.classList.add('modeles__inner-button')
+ modelesInnerButton.classList.add('modeles__button')
  modelesInnerButton.classList.add('button')
+ modelesInnerButton.style.border = 'none'
  modelesInnerButton.innerHTML = 'ВСЕ МОДЕЛИ'
+ modelesInnerButton.style.color = 'white'
+
  modelesInnerButtonWrap.append(modelesInnerButton)

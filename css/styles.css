@@ -12,7 +12,7 @@
   font-weight: 300;
 }
 
-.header .slider .header-sale__headline, .header .slider .header-sale__button, .delivery__title {
+.header .slider .header-sale__headline, .header .slider .header-sale__button, .delivery__title, .modeles__button {
   font-family: 'Montserrat';
   font-weight: 400;
 }
@@ -48,7 +48,12 @@
 .button {
   width: 220px;
   height: 55px;
-  background: #D7B399;
+  background-image: url(../images/arrow-btn.png);
+  background-repeat: no-repeat;
+  background-color: #D7B399;
+  background-position: 90% 50%;
+  padding: 18px 35px;
+  cursor: pointer;
 }
 
 .header-w {
@@ -651,6 +656,13 @@
   top: 23px;
   border-left: none;
   border-top: none;
+}
+
+.modeles__button {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 }
 
 .title {
