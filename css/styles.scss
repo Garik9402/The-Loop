@@ -582,8 +582,31 @@ $color-black:#000000;
         letter-spacing: 0.02em;
         color: #FFFFFF;
     }
-    &__subscribe {}
-    &__input {}
-    &__subscribe-button {}
-    &__subscribe-text {}
+    &__subscribe {
+        max-width: 475px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input {
+        max-width: 255px;
+        width: 100%;
+        padding-left: 20px;
+        outline: none;
+    }
+    &__subscribe-button {
+        max-width: 185px;
+        width: 100%;
+        height: 40px;
+        padding: 12px 14px;
+        background-color: $background-buttons;
+        text-decoration: none;
+        text-align: center
+    }
+    &__subscribe-text {
+        @extend %Montserrat-500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
 }
