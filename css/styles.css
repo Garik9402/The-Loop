@@ -17,7 +17,7 @@
   font-weight: 400;
 }
 
-.header__top-main .nav__items-link, .header__top-main .nav__drropdown-itemslink, .header__top-itemslink, .collections__mens-title, .collections__women-title, .discounts__subscribe-text {
+.header__top-main .nav__items-link, .header__top-main .nav__drropdown-itemslink, .header__top-itemslink, .collections__mens-title, .collections__women-title, .present__subscribe-text {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 14px;
@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.header .slider .header-sale__title, .header .slider .header-sale__priceold, .header .slider .header-sale__pricnew, .modeles__item-price, .title, .discounts__title {
+.header .slider .header-sale__title, .header .slider .header-sale__priceold, .header .slider .header-sale__pricnew, .modeles__item-price, .title, .present__title {
   font-family: 'Montserrat';
   font-weight: 700;
 }
@@ -583,7 +583,7 @@
           justify-content: space-between;
 }
 
-.modeles__item {
+.modeles .modeles__item {
   position: relative;
   max-width: 255px;
   width: 100%;
@@ -600,7 +600,7 @@
   padding: 25px 0px 28px;
 }
 
-.modeles__item::before, .modeles__item::after {
+.modeles .modeles__item::before, .modeles .modeles__item::after {
   content: '';
   position: absolute;
   display: block;
@@ -609,14 +609,14 @@
   border: 3px solid #D7B399;
 }
 
-.modeles__item::before {
+.modeles .modeles__item::before {
   left: -2px;
   top: -2px;
   border-right: none;
   border-bottom: none;
 }
 
-.modeles__item::after {
+.modeles .modeles__item::after {
   right: -2px;
   top: -2px;
   border-left: none;
@@ -667,6 +667,46 @@
   color: #FFFFFF;
 }
 
+.modeles__item {
+  position: relative;
+  max-width: 255px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0px 28px;
+}
+
+.modeles__item::before, .modeles__item::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #D7B399;
+}
+
+.modeles__item::before {
+  left: -2px;
+  top: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.modeles__item::after {
+  right: -2px;
+  top: -2px;
+  border-left: none;
+  border-bottom: none;
+}
+
 .title {
   font-size: 36px;
   line-height: 44px;
@@ -677,12 +717,12 @@
   margin-bottom: 103px;
 }
 
-.discounts-w {
+.present-w {
   width: 100%;
   padding: 75px 0px;
 }
 
-.discounts {
+.present {
   width: 100%;
   height: 180px;
   background-color: #212121;
@@ -694,7 +734,7 @@
           align-items: center;
 }
 
-.discounts__inner {
+.present__inner {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
@@ -706,7 +746,7 @@
           justify-content: space-between;
 }
 
-.discounts__title {
+.present__title {
   font-size: 30px;
   line-height: 37px;
   text-align: center;
@@ -714,7 +754,7 @@
   color: #FFFFFF;
 }
 
-.discounts__subscribe {
+.present__subscribe {
   max-width: 475px;
   width: 100%;
   display: -webkit-box;
@@ -725,14 +765,14 @@
           justify-content: space-between;
 }
 
-.discounts__input {
+.present__input {
   max-width: 255px;
   width: 100%;
   padding-left: 20px;
   outline: none;
 }
 
-.discounts__subscribe-button {
+.present__subscribe-button {
   max-width: 185px;
   width: 100%;
   height: 40px;
@@ -742,7 +782,7 @@
   text-align: center;
 }
 
-.discounts__subscribe-text {
+.present__subscribe-text {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
