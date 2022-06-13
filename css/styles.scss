@@ -325,6 +325,7 @@ $color-black:#000000;
 
 #collections-w {
     width: 100%;
+    padding-bottom: 75px;
 }
 
 .collections {
@@ -454,6 +455,7 @@ $color-black:#000000;
 
 #modeles-w {
     width: 100%;
+    padding: 75px 0px 75px;
 }
 
 .modeles {
@@ -552,4 +554,36 @@ $color-black:#000000;
     color: $color-black;
     text-align: center;
     margin-bottom: 103px;
+}
+
+.discounts-w {
+    width: 100%;
+    padding: 75px 0px;
+}
+
+.discounts {
+    width: 100%;
+    height: 180px;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    &__inner {
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        @extend %Montserrat-700;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    &__subscribe {}
+    &__input {}
+    &__subscribe-button {}
+    &__subscribe-text {}
 }
