@@ -632,12 +632,104 @@ $color-black:#000000;
         padding: 12px 14px;
         background-color: $background-buttons;
         text-decoration: none;
-        text-align: center
     }
     &__subscribe-text {
         @extend %Montserrat-500;
         font-size: 14px;
         line-height: 17px;
+        color: #FFFFFF;
+    }
+}
+
+.discounts-w {
+    width: 100%;
+    padding: 75px 0px;
+}
+
+.discounts {
+    width: 100%;
+}
+
+.discounts-inner {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    &__title {}
+    &__itemswrap {
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        max-width: 255px;
+        width: 100%;
+        padding: 23px 0px;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 3px solid #D7B399;
+        }
+        &::before {
+            left: -2px;
+            top: -2px;
+            border-right: none;
+            border-bottom: none
+        }
+        &::after {
+            right: -2px;
+            top: -2px;
+            border-left: none;
+            border-bottom: none;
+        }
+    }
+    &__img {
+        margin-bottom: 25px;
+    }
+    &__name {
+        margin-bottom: 15px;
+    }
+    &__price {
+        position: relative;
+        @extend %Montserrat-700;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #D7B399;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 3px solid #D7B399;
+        }
+        &::before {
+            border-left: none;
+            border-top: none;
+        }
+    }
+    &__button-w {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__button {
+        text-decoration: none;
+        text-align: center
+    }
+    &__buttontext {
+        @extend %Montserrat-500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
         color: #FFFFFF;
     }
 }
