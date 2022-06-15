@@ -12,7 +12,7 @@
   font-weight: 300;
 }
 
-.header .slider .header-sale__headline, .header .slider .header-sale__button, .delivery__title, .modeles__button {
+.header .slider .header-sale__headline, .header .slider .header-sale__button, .delivery__title, .modeles__button, .footer__text {
   font-family: 'Montserrat';
   font-weight: 400;
 }
@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.header .slider .header-sale__title, .header .slider .header-sale__priceold, .header .slider .header-sale__pricnew, .modeles__item-price, .title, .present__title, .discounts-inner__price {
+.header .slider .header-sale__title, .header .slider .header-sale__priceold, .header .slider .header-sale__pricnew, .modeles__item-price, .title, .present__title, .discounts-inner__price, .footer__item-name {
   font-family: 'Montserrat';
   font-weight: 700;
 }
@@ -936,10 +936,44 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__logotext {
   max-width: 200px;
   width: 100%;
+}
+
+.footer__logolink {
+  display: inline-block;
+  width: 201px;
+  height: 40px;
+  margin-bottom: 32px;
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.footer__items-row {
+  max-width: 692px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item-name {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=styles.css.map */
