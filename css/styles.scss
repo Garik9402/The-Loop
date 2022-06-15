@@ -748,3 +748,33 @@ $color-black:#000000;
         color: #FFFFFF;
     }
 }
+
+.footer-w {
+    width: 100%;
+    padding: 75px 0px 0px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #212121;
+    &__inner {
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+    &__logotext {
+        max-width: 200px;
+        width: 100%;
+    }
+    &__logolink {}
+    &__text {}
+    &__items-row {}
+    &__item {}
+    &__item-name {}
+    .nav {
+        &__list {}
+        &__item {}
+        &__item-link {}
+    }
+}
