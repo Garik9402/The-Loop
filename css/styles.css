@@ -12,7 +12,7 @@
   font-weight: 300;
 }
 
-.header .slider .header-sale__headline, .header .slider .header-sale__button, .delivery__title, .modeles__button, .footer__text {
+.header .slider .header-sale__headline, .header .slider .header-sale__button, .delivery__title, .modeles__button, .footer__text, .footer .nav__item-link {
   font-family: 'Montserrat';
   font-weight: 400;
 }
@@ -975,5 +975,21 @@
   line-height: 12px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.footer .nav__list {
+  list-style: none;
+}
+
+.footer .nav__item {
+  margin-top: 10px;
+}
+
+.footer .nav__item-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #CBCFD4;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

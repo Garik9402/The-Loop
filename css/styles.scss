@@ -794,10 +794,21 @@
             line-height: 12px;
             text-transform: uppercase;
             color: #FFFFFF;
+            margin-bottom: 10px;
         }
         .nav {
-            &__list {}
-            &__item {}
-            &__item-link {}
+            &__list {
+                list-style: none;
+            }
+            &__item {
+                margin-top: 10px;
+            }
+            &__item-link {
+                @extend %Montserrat-400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #CBCFD4;
+                text-decoration: none;
+            }
         }
     }
