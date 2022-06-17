@@ -811,4 +811,31 @@
                 text-decoration: none;
             }
         }
+        &__item-social {}
+        &__item-socialname {
+            @extend %Montserrat-700;
+            font-size: 10px;
+            line-height: 12px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .nav {
+            &__list-social {
+                list-style: none;
+            }
+            &__item-social {
+                margin-top: 10px;
+            }
+            &__item-sociallink {
+                @extend %Montserrat-400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #CBCFD4;
+                text-decoration: none;
+            }
+        }
+        &__item-socialicon {
+            margin-right: 5px;
+        }
     }
