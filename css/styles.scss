@@ -842,3 +842,31 @@
             margin-right: 5px;
         }
     }
+    
+    .copyright {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__inner {
+            max-width: 1110px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__link {
+            @extend %Montserrat-400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #212121;
+            text-decoration: none
+        }
+        &__privacy {
+            @extend %Montserrat-400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #212121;
+            text-decoration: none;
+        }
+    }
