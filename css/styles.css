@@ -448,6 +448,10 @@
   cursor: pointer;
 }
 
+.collections__mens-button:hover {
+  opacity: 0.5;
+}
+
 .collections__womens {
   width: 100%;
   background-color: #F4F4F4;
@@ -499,6 +503,10 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+}
+
+.collections__women-button:hover {
+  opacity: 0.5;
 }
 
 .collections__whole {
@@ -667,6 +675,10 @@
   color: #FFFFFF;
 }
 
+.modeles__button:hover {
+  opacity: 0.5;
+}
+
 .modeles__item {
   position: relative;
   max-width: 255px;
@@ -779,6 +791,10 @@
   padding: 12px 14px;
   background-color: #D7B399;
   text-decoration: none;
+}
+
+.present__subscribe-button:hover {
+  opacity: 0.5;
 }
 
 .present__subscribe-text {
@@ -910,6 +926,10 @@
 .discounts-inner__button {
   text-decoration: none;
   text-align: center;
+}
+
+.discounts-inner__button:hover {
+  opacity: 0.5;
 }
 
 .discounts-inner__buttontext {

@@ -373,6 +373,9 @@
             align-items: center;
             border: none;
             cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
         }
         &__womens {
             width: 100%;
@@ -411,6 +414,9 @@
             background-repeat: no-repeat;
             background-position: 50% 50%;
             cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
         }
         &__whole {
             max-width: 1110px;
@@ -542,6 +548,9 @@
             line-height: 20px;
             letter-spacing: 0.03em;
             color: #FFFFFF;
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
     
@@ -632,6 +641,9 @@
             padding: 12px 14px;
             background-color: $background-buttons;
             text-decoration: none;
+            &:hover {
+                opacity: 0.5;
+            }
         }
         &__subscribe-text {
             @extend %Montserrat-500;
@@ -738,7 +750,10 @@
         }
         &__button {
             text-decoration: none;
-            text-align: center
+            text-align: center;
+            &:hover {
+                opacity: 0.5;
+            }
         }
         &__buttontext {
             @extend %Montserrat-500;
